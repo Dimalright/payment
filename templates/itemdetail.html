@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{item.name}}</title>
+    {% load static %}
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="{% static 'script.js' %}"></script>
+    
+</head>
+<body>
+    <h3>{{ item.name }}</h3>
+    <p><strong>Описание: </strong>{{item.description}}</p>
+    <p><strong>Цена: </strong>{{ item.price }} &#8381;</p>
+    <form action=" /buy/{{ item.id }}" target="_blank">
+        <button>Buy</button>
+       </form>
+    
+
+</body>
+</html>

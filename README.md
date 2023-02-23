@@ -27,8 +27,8 @@ docker-compose exec web python manage.py collectstatic --no-input
 _______
 Проект развернут на https://dimalright.pythonanywhere.com/
 ```
-##
-Примеры запросов:
+
+## Примеры запросов:
 ```
 https://dimalright.pythonanywhere.com/item/1
 ```

@@ -28,7 +28,7 @@ _______
 Проект развернут на https://dimalright.pythonanywhere.com/
 ```
 
-## Примеры запросов:
+## Запуск
 ```
 https://dimalright.pythonanywhere.com/item/1
 ```

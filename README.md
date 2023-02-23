@@ -31,4 +31,5 @@ _______
 ```
 https://dimalright.pythonanywhere.com/item/1
 ```
+```
 https://dimalright.pythonanywhere.com/buy/1

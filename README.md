@@ -27,10 +27,10 @@ docker-compose exec web python manage.py collectstatic --no-input
 
 ## Примеры запросов:
 ```
-https://dimalright.pythonanywhere.com/item/1
+https://localhost:8000/item/1
 ```
 ```
-https://dimalright.pythonanywhere.com/buy/1
+https://localhost:8000/buy/1
 _______
 ```
 Проект развернут на https://dimalright.pythonanywhere.com/

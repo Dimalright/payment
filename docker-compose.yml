@@ -1,0 +1,19 @@
+version: "3.3"
+   
+services:
+  db:
+    image: postgres
+    ports:
+      - "5433:5432"
+    env_file:
+      - .env
+  django:
+    build: .
+    restart: always
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/payment
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db

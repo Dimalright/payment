@@ -51,7 +51,9 @@ class PaymentView(APIView):
         session = stripe.checkout.Session.create(
             line_items=[
                 {
-                    "price_data": {"currency": "rub", "unit_amount": item.price, "product_data": {"name": item.name}},
+                    "price_data": {"currency": "rub",
+                    "unit_amount": item.price,
+                    "product_data": {"name": item.name}},
                     "quantity": 1,
                 }
             ],
